@@ -28,6 +28,9 @@ EOT;
 
             } else if ($source == "edit"){
               include "include/questions/edit.php";
+
+            } else if ($source == "pdf"){
+              include "include/questions/pdf.php";
               
             }else{
               include "include/questions/view.php";

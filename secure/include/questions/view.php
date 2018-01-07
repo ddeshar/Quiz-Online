@@ -8,6 +8,7 @@
   </div>
   <div>
     <a class="btn btn-primary btn-flat" href="questions.php?source=add"><i class="fa fa-lg fa-plus"></i></a>
+    <a class="btn btn-danger btn-flat" href="include/questions/pdf.php"><i class="fa fa-lg fa-file-pdf-o"></i></a>
   </div>
 </div>
 <div class="row">

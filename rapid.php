@@ -32,7 +32,7 @@
             while ($row_ques = mysqli_fetch_array($questions)) {
               $quesid = $row_ques['question_id'];
 
-                  while($x <= 15) {
+                  while($x <= 7) {
                   echo  "<a href=\"rquestion.php?question=$quesid&cat=$cat&group=$group\" class=\"btn btn-sq-lg btn-warning\">
                           <i class=\"fa fa-book fa-5x\"></i><br/>
                           Question No <br>$x

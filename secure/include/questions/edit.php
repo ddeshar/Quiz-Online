@@ -11,7 +11,7 @@
     $file_status        = $_POST["file_status"];
     $category_question  = $_POST["category_question"];
 
-    $sql = "UPDATE questions SET category_detail='$catname' where question_id='$qid'";
+    $sql = "UPDATE `php_quiz`.`questions` SET `question` = '$question', `answer` = '$answer', `status` = '$status ', `group` = '$group', `file` = '$file', `file_status` = '$file_status', `category_question` = '$category_question' WHERE `questions`.`question_id` = '$qid'";
     //echo $sql;exit;
     $result = mysqli_query($conn, $sql);
     if ($result) {

@@ -35,11 +35,12 @@
     <div class="container text-center">
       <h3 class="mx-auto mb-5">
         <?php 
-          foreach ($post as $rowaa){ 
-              echo $rowaa["question"] ."<hr>";
-            $query = http_build_query(array('myArray' => $rowaa));
-            $url=urlencode($query); 
-          }
+          if (mysqli_num_rows($result) > 0) {
+            foreach ($post as $rowaa){ 
+                echo $rowaa["question"] ."<hr>";
+              $query = http_build_query(array('myArray' => $rowaa));
+              $url=urlencode($query); 
+            }
         ?>
       </h3>
     
@@ -47,6 +48,9 @@
     <button type="button" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#exampleModal">
       Answer
     </button>
+    <?php } else {?>
+      <h1 class="btn btn-danger btn-xl"> Sorry! All question has finished</h1>
+    <?php }?>
     
     </div>
   </section>

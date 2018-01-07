@@ -10,7 +10,7 @@
     $file_status        = $_POST["file_status"];
     $category_question  = $_POST["category_question"];
 
-    $sql = "INSERT INTO `php_quiz`.`questions` (`question`, `answer`, `status`, `group`, `file`, `file_status`, `category_question`) VALUES ('$question', '$answer', '$status', '$group', '$file', '$file_status', '$category_question')";
+    $sql = "INSERT INTO `php_quiz`.`questions` (`question`, `answer`, `status`, `group`, `file`, `file_status`, `category_question`) VALUES ('$question', '$answer', '$status', '$group', '1', '$file_status', '$category_question')";
     $result = mysqli_query($conn, $sql);
 
     if ($result) {

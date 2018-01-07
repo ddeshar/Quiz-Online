@@ -71,6 +71,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <input name="qid" type="hidden" value="<?=$qid?>" />
+          <input name="file" type="hidden" value="<?=$file?>" />
           <button class="btn btn-primary icon-btn" type="submit" name="btnEdit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Edit Category</button>
         </div>
       </div>

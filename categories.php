@@ -17,10 +17,15 @@
               $category_detail = $row["category_detail"];
         ?>
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <a href="select.php?cat=<?=$category_id?>&group=<?=$getgroup?>">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
+            <?php if($category_detail == "rapidfire"){
+              echo "<a href=\"rapid.php?cat=$category_id&group=$getgroup&rapid=rapidfire\">";
+            }else{
+              echo "<a href=\"select.php?cat=$category_id&group=$getgroup\">";
+            }                          
+            ?>
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
           </a>
           <h4>
             <strong><?=$category_detail?></strong>

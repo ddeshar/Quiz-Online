@@ -73,7 +73,7 @@ $ft = ' <div style="text-align:center">
             <b>Godawari Municipality wise Inter school Running Shield Quiz Competition 2074</b><br />  
         </div> ';
 $pdf->writeHTML($ft, true, false, true, false, '');
-$pdf->SetFont('thsarabun', '', 16, '', true);
+$pdf->SetFont('sumana', '', 16, '', true);
 
 $html = '';
 $html = '<hr />';

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    <title>Godawari Municipality wise Inter school Running Shield Quiz Competition 2074</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

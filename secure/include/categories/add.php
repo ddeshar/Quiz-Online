@@ -13,7 +13,10 @@
     }else{
       die("Query Failed" . mysqli_error($conn));
     }
+
   }
+  $catname = "";
+
 ?>
 <div class="row">
   <div class="col-md-8">

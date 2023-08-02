@@ -1,14 +1,26 @@
 <?php include './include/_header.php';
   $cat = $_GET['cat'];
   $group = $_GET['group'];
-  $rapid = $_GET['rapid'];
-  $qid   = $_GET['qid'];
+  // $rapid = $_GET['rapid'];
 
-  if(isset($qid)){
+  // var_dump($_GET['qid']);
+
+  if (isset($_GET['qid'])) {
+    $qid = $_GET['qid'];
     $update = "UPDATE `php_quiz`.`questions` SET `file` = '0' 
                WHERE `questions`.`category_question` = '$cat'
                AND `questions`.`question_id` in ($qid)";
+    // Debug: Check the SQL query before execution
+    echo $update;
+    
     $results = mysqli_query($conn, $update);
+
+    // Debug: Check if the query was successful
+    if ($results) {
+        echo "Update successful!";
+    } else {
+        echo "Update failed: " . mysqli_error($conn);
+    }
   }
 
   $sql = "SELECT * FROM questions

@@ -37,7 +37,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Correct Answer Is</h5>
       </div>
         <div class="modal-body">
-          <h1><?=$row_news['answer']?> <?=$qid?></h1>      
+          <h1><?=$row_news['answer']?> <?= $row_news['question_id'] ?></h1>      
         </div>
       <div class="modal-footer">
         <button  onclick="location.href='select.php?cat=<?=$cat?>&group=<?=$group?>&qid=<?=$row_news['question_id']?>'" type="button" class="btn btn-danger btn-lg" data-dismiss="modal">NEXT</button>

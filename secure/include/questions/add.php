@@ -22,6 +22,11 @@
       die("Query Failed" . mysqli_error($conn));
     }
   }
+  $question           = "";
+  $answer             = "";
+  $status             = "1";;
+  $group              = "";
+
 ?>
 <div class="row">
   <div class="col-md-12">

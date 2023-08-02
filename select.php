@@ -1,13 +1,14 @@
 <?php include './include/_header.php';
   $cat = $_GET['cat'];
   $group = $_GET['group'];
-  $qid   = $_GET['qid'];
 
-  if(isset($qid)){
+  if (isset($_GET['qid'])) {
+    $qid = $_GET['qid'];
     $update = "UPDATE `php_quiz`.`questions` SET `file` = '0' 
                WHERE `questions`.`question_id` = '$qid' AND `questions`.`category_question` = '$cat'";
     $results = mysqli_query($conn, $update);
   }
+  
 
   $sql = "SELECT * FROM questions
           INNER JOIN categories ON questions.category_question = categories.category_id
